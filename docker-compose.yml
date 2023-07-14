@@ -9,8 +9,6 @@ services:
       - "3000:3000"
     depends_on:
       - mongodb
-    environment:
-      - MONGODB_HOST=mongodb
 
   mongodb:
     image: mongo
