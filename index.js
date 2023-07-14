@@ -10,7 +10,7 @@ app.use('/user', UserRouter)
 app.use('/todos', TodoRouter)
 
 // Connect to MongoDB
-mongoose.connect('mongodb://to-do-apps_mongodb_1:27017/todoapp', {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect('mongodb://mongodb_1:27017/todoapp', {useNewUrlParser: true, useUnifiedTopology: true})
     .then(() => console.log('Connected to MongoDB'))
     .catch(error => console.error('Failed to connect to MongoDB:', error));
 
